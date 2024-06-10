@@ -1,0 +1,67 @@
+body {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#sim-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+.sim-input-container {
+    margin-bottom: 1.2em;
+}
+
+.sim-input {
+    text-align: center;
+}
+
+.sim-input[type=range] {
+    width: 100%;
+}
+
+.sim-label {
+    display: block;
+    margin-bottom: 0.4em;
+}
+
+.input-section {
+    margin-bottom: 1.2em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+#sim-input-button {
+    border: 0;
+    line-height: 2.5;
+    padding: 0 20px;
+    font-size: 1rem;
+    text-align: center;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    border-radius: 10px;
+    background-color: rgb(220 0 0 / 100%);
+    background-image: linear-gradient(to top left,
+            rgb(0 0 0 / 20%),
+            rgb(0 0 0 / 20%) 30%,
+            rgb(0 0 0 / 0%));
+    box-shadow:
+        inset 2px 2px 3px rgb(255 255 255 / 60%),
+        inset -2px -2px 3px rgb(0 0 0 / 60%);
+}
+
+#sim-input-button:hover {
+    background-color: rgb(255 0 0 / 100%);
+}
+
+#sim-input-button:active {
+    box-shadow:
+        inset -2px -2px 3px rgb(255 255 255 / 60%),
+        inset 2px 2px 3px rgb(0 0 0 / 60%);
+}
+
+#game-canvas {
+    background: #eee;
+    border-radius: 3px;
+}

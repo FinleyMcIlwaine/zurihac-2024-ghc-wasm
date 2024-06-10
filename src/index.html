@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+
+<body>
+    <div id="sim-container">
+        <h1 id="sim-title" style="text-align: center;">
+            Cut a cake randomly N times. What is the expected number of pieces?
+        </h1>
+        <div class="sim-input-container">
+            <div class="input-section">
+            <label class="sim-label" for="num-cuts-input">Number of cuts:</label>
+            <input class="sim-input" type="range" value="500" id="num-cuts-input"
+            name="num-cuts-input" min="1" max="1000" oninput="this.parentElement.querySelector('#num-cuts-value').textContent = this.value"/>
+            <span style="display: block; text-align: center;" id="num-cuts-value">500</span>
+            </div>
+
+            <div class="input-section">
+                <label class="sim-label" style="display: inline;" for="random-input">Random?</label>
+                <input class="sim-input" style="margin-bottom: 1.2em;" type="checkbox" id="random-input" checked name="random-input"/>
+            </div>
+
+            <div class="input-section">
+                <label class="sim-label" for="num-sims-input">Number of simulations:</label>
+                <input class="sim-input" type="range" value="0" id="num-sims-input"
+                name="num-sims" min="0" max="3" oninput="this.parentElement.querySelector('#num-sims-value').textContent = 4**this.value"
+                />
+                <span style="display: block; text-align: center;" id="num-sims-value">1</span>
+            </div>
+
+            <div class="input-section">
+                <label class="sim-label" style="display: inline;" for="sort-input">Sort by number of cuts (for Andreas)?</label>
+                <input class="sim-input" style="margin-bottom: 1.2em;" type="checkbox" id="sort-input" checked name="sort-input"/>
+            </div>
+
+            <div class="input-section" style="text-align: center;">
+                <input id="sim-input-button" type="button" value="Run simulation" />
+            </div>
+        </div>
+        <div>
+            <canvas id="game-canvas" width="620" height="620"></canvas>
+        </div>
+        <h2 style="text-align: start;">
+            Results:
+        </h2>
+        <div style="margin-bottom: 2em;">
+            <canvas id="results-canvas" width="620" height="310"></canvas>
+        </div>
+        <div style="margin-bottom: 2em;">
+            <canvas id="ratio-canvas" width="620" height="310"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="index.js"></script>
+</body>
+
+</html>
