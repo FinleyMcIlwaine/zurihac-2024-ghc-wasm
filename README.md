@@ -39,6 +39,6 @@ this repository and serve the `dist` directory on a local file server.
 ## Credits:
 
 - Finley McIlwaine (author)
-- Andreas Klebinger ([@wz1000](https://github.com/AndreasPK))
+- Andreas Klebinger ([@AndreasPK](https://github.com/AndreasPK))
 - Zubin Duggal ([@wz1000](https://github.com/wz1000))
 - [ZuriHac 2024](https://zfoh.ch/zurihac2024/)
