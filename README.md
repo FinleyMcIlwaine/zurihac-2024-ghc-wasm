@@ -5,9 +5,9 @@ shirts with the following prompt on the back:
 
 ![shirt prompt](./assets/shirt.png)
 
-I was looking to do something with [GHC's WebAssembly (wasm)
+I was interested in doing something with [GHC's WebAssembly (wasm)
 backend](https://ghc.gitlab.haskell.org/ghc/doc/users_guide/wasm.html), so I
-decided to solve the problem above using a WebAssembly simulation in the
+decided to solve the problem above using a wasm-driven simulation in the
 browser.
 
 Here it is in action:
